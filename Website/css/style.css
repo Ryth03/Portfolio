@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playpen sans',sans-serif;
+    
+    /* Color pallet https://id.pinterest.com/pin/707417053950911526/ */
+    background-color: #ffeaea;
+
+    /* Color pallet https://in.pinterest.com/pin/soft-purple-color-palette--59532026304417116/ */
+    /* background-color: #ccc2ff; */
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 1.5rem;
+}
+
+#content {
+    display: flex;
+    gap: 1rem 2rem;
+}
+
+.tl-justify {
+    text-align: justify;
+}
+
+
+
+.card {
+    /* box-shadow: 0px 5px 9px 2px rgb(200, 208, 207); */
+    box-shadow: 0px 2px 9px 2px rgb(138, 138, 138);
+    border-radius: 18px;
+
+    padding: 5px 10px 5px 15px;
+}
+
+
+article {
+    margin-bottom: 40px;
+}
+header {
+    display: flex;
+    background-color: #ffc3c3;
+}
+.logo {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+    color: royalblue;
+    font-size: 30px;
+}
+nav{
+    margin: auto;
+    width: 100%;
+
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+nav ul li {
+  padding-left: 20px;
+  display: block;
+  list-style-type: none;
+  
+}
+
+footer {
+position: relative;
+bottom: 0;
+left: 0;
+right: 0;
+background: #ffc3c3;
+margin: auto;
+width: 100%;
+padding-top: 40px;
+color: black;
+}
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+    main{
+        flex-flow: column nowrap;
+    }
+    main aside{
+        align-self: center;
+    }
+}
+@media screen and (max-width: 400px){
+    header {
+        align-self: center;
+        flex-flow: column nowrap;
+    }
+}
